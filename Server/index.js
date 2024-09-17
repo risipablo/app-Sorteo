@@ -9,7 +9,7 @@ const app = express();
 app.use(express.json());
 
 const corsOption = {
-    origin: ['http://localhost:5173'],
+    origin: ['http://localhost:5173,https://sorteo-flores-bach.vercel.app','https://app-sorteo.onrender.com'],
     methods: 'GET,POST,DELETE,PATCH',
     optionsSuccessStatus: 200
 }
