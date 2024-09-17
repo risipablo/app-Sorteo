@@ -1,6 +1,6 @@
 .container-sorteo {
   text-align: center;
-  margin: 2rem auto ;
+  margin: 2rem auto;
   min-height: 100vh;
 }
 
@@ -10,16 +10,14 @@
 
 .sortear {
   background-color: #800080;
-
   border: none;
   padding: 10px 20px;
   cursor: pointer;
   border-radius: 5px;
-
   transition: background-color 0.3s ease;
 }
 
-.sortear p{
+.sortear p {
   font-weight: 600;
   font-size: 1.2rem;
   color: rgb(236, 233, 233);
@@ -33,7 +31,7 @@
   margin-top: 20px;
 }
 
-.ganadores h1 {
+.ganadores h2 {
   font-size: 24px;
   margin-bottom: 10px;
   color: purple;
@@ -42,24 +40,25 @@
 .ganadores p {
   font-size: 18px;
   margin: 5px 0;
+}
+
+.fade-in {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  animation: fadeIn 0.5s forwards;
 }
 
 .ganador1 {
-  transition-delay: 0.5s;
+  animation-delay: 1s;
 }
 
 .ganador2 {
-  transition-delay: 1s;
+  animation-delay: 0.5s;
 }
 
-.ganador3 {
-  transition-delay: 1.5s;
-}
-
-.ganadores h1, .ganadores p {
-  opacity: 1;
-  transform: translateY(0);
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

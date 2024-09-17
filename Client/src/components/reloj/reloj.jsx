@@ -17,7 +17,7 @@ export function Reloj(){
 
             const diaRestante = (limite.getDate() - hoy.getDate())
             const horaRestante = (limite.getHours() + 24 - hoy.getHours() % 24)
-            const minRestante = (limite.getMinutes() + 60 - hoy.getMinutes()) % 60;
+            const minRestante = (limite.getMinutes() + 59 - hoy.getMinutes()) % 60;
             const segRestante = ((limite.getSeconds() + 0 - hoy.getSeconds())) 
 
             setDia(diaRestante);

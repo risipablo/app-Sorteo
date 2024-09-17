@@ -9,7 +9,7 @@ const app = express();
 app.use(express.json());
 
 const corsOption = {
-    origin: ['http://localhost:5173'],
+    origin: ['http://localhost:5173','https://app-sorteo-theta.vercel.app','https://app-sorteo.onrender.com'],
     methods: 'GET,POST,DELETE,PATCH',
     optionsSuccessStatus: 200
 }
@@ -47,7 +47,7 @@ app.post('/add-participantes', async (req,res) => {
 })
 
 app.delete('/delete-participantes/:id', async (req,res) => {
-    const {id} = req.body;
+    const {id} = req.params;
     try{
         const deleted = await NombreModel.findByIdAndDelete(id);
         res.json(deleted);

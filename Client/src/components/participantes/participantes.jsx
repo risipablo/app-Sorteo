@@ -69,7 +69,7 @@ export function Participantes({participantesChange}) {
                                 onClick={() => handleShowDelete(element._id)} 
                                 style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }}
                             >
-                                {element.nombre}
+                                {element.nombre} 
 
                                 {selectedId === element._id && ( 
                                     <button
