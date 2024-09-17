@@ -4,7 +4,8 @@ import "./participantes.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
-const serverFront = 'http://localhost:3001';
+// const serverFront = 'http://localhost:3001';
+const serverFront = 'https://app-sorteo.onrender.com'
 
 export function Participantes({participantesChange}) {
     const [participante, setParticipante] = useState([]);
