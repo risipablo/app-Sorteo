@@ -62,6 +62,8 @@ export function Participantes({participantesChange}) {
                 />
                 <button className="agregar" onClick={addParticipante}>Agregar</button>
 
+                </div>
+
                 <div className="list-participantes">
                     {participante.map((element) => (
                         <ul key={element._id}>
@@ -89,7 +91,7 @@ export function Participantes({participantesChange}) {
                         </ul>
                     ))}
                 </div>
-            </div>
+
         </section>
     );
 }
