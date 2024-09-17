@@ -1,0 +1,65 @@
+.container-sorteo {
+  text-align: center;
+  margin: 2rem auto ;
+  min-height: 100vh;
+}
+
+.reloj-container p {
+  margin: 10px 0;
+}
+
+.sortear {
+  background-color: #800080;
+
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+
+  transition: background-color 0.3s ease;
+}
+
+.sortear p{
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: rgb(236, 233, 233);
+}
+
+.sortear:hover {
+  background-color: #9400d3;
+}
+
+.ganadores {
+  margin-top: 20px;
+}
+
+.ganadores h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: purple;
+}
+
+.ganadores p {
+  font-size: 18px;
+  margin: 5px 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.ganador1 {
+  transition-delay: 0.5s;
+}
+
+.ganador2 {
+  transition-delay: 1s;
+}
+
+.ganador3 {
+  transition-delay: 1.5s;
+}
+
+.ganadores h1, .ganadores p {
+  opacity: 1;
+  transform: translateY(0);
+}
