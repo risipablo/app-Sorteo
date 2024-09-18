@@ -14,7 +14,10 @@ export function Reloj(){
         const intervalo = setInterval(() => {
             const hoy = new Date();
             const limite = new Date()
+<<<<<<< HEAD
             
+=======
+>>>>>>> 04e9bfc430c43e74cbbec6c6d7f006947ef559a2
 
             const diaRestante = (limite.getDate() - hoy.getDate())
             const horaRestante = (limite.getHours() + 24 - hoy.getHours()) % 24
