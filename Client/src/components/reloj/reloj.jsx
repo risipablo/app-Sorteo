@@ -13,7 +13,7 @@ export function Reloj(){
     useEffect(() => {
         const intervalo = setInterval(() => {
             const hoy = new Date();
-            const limite = new Date('2024-9-17')
+            const limite = new Date()
 
             const diaRestante = (limite.getDate() - hoy.getDate())
             const horaRestante = (limite.getHours() + 24 - hoy.getHours()) % 24
